@@ -19,6 +19,10 @@
   min-block-size: 100dvb;
   font-family: var(--main-font-family), sans-serif;
   font-variation-settings: 'wght' var(--text-main-font-weight);
+  background-image: var(--background-image);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 4px;
   background-color: var(--background-color);
   color: var(--accent-color);
 }

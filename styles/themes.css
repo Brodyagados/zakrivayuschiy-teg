@@ -10,6 +10,7 @@
   --card-title-font-weight: 785;
   --background-color: #000;
   --accent-color: #00cc14;
+  --background-image: url(../svg/pattern-dark.svg);
 }
 
 .theme-light {
@@ -17,6 +18,7 @@
   --card-title-font-weight: 700;
   --background-color: #fff;
   --accent-color: #000;
+  --background-image: url(../svg/pattern-light.svg);
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,5 +28,6 @@
     --card-title-font-weight: 700;
     --background-color: #fff;
     --accent-color: #000;
+    --background-image: url(../svg/pattern-light.svg);
   }
 }
