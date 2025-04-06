@@ -26,3 +26,67 @@
   background-color: var(--background-color);
   color: var(--accent-color);
 }
+
+/* #region Шапка */
+
+.header {
+  inline-size: var(--content-inline-size);
+  margin: 100px auto;
+  outline: 2px solid currentColor;
+  background-color: var(--background-color);
+  font-family: var(--accent-font-family), sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem)
+    clamp(0.875rem, 9.953vw - 1.458rem, 7.5rem) 25px;
+}
+
+.header__title {
+  font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  line-height: 1;
+}
+
+.header__subtitle {
+  margin-block-start: 20px;
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+  line-height: 1;
+}
+
+/* #region Переключатель темы */
+
+.theme-menu {
+  max-inline-size: 84px;
+  margin: 25px auto 0;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: start;
+}
+
+.theme-menu__button {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-menu__button:disabled {
+  position: relative;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  left: -10px;
+}
+
+/* #endregion */
+
+/* #endregion */
