@@ -40,7 +40,7 @@
   font-family: var(--accent-font-family), fantasy;
   text-transform: uppercase;
   text-align: center;
-  padding-block: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem) 25px;
+  padding-block: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem) 23px;
 }
 
 .header__title {
@@ -57,14 +57,14 @@
 /* #region Переключатель темы */
 
 .theme-menu {
-  max-inline-size: 84px;
+  max-inline-size: 76px;
   margin: 23px auto 0;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 9px;
   align-items: start;
 }
 
