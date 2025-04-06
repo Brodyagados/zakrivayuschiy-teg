@@ -154,6 +154,24 @@
   font-family: var(--accent-font-family), sans-serif;
   border: var(--border);
   background-color: var(--background-color);
+
+/* #endregion */
+
+/* #region Подвал */
+
+.card__save-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 50px auto 100px;
+  padding: 15px 19px;
+}
+
+.floppy-icon {
+  --size: 21px;
+
+  width: var(--size);
+  height: var(--size);
 }
 
 /* #endregion */
