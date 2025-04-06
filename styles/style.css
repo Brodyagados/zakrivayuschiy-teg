@@ -32,7 +32,7 @@
 .header {
   inline-size: var(--content-inline-size);
   margin: 100px auto;
-  outline: var(--border);
+  border: var(--border);
   background-color: var(--background-color);
   font-family: var(--accent-font-family), sans-serif;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
 
 .theme-menu {
   max-inline-size: 84px;
-  margin: 25px auto 0;
+  margin: 23px auto 0;
 }
 
 .theme-menu__list {
@@ -122,7 +122,7 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  margin-block-start: -4px;
+  margin-block-start: -5px;
   padding: 25px;
   line-height: 1.17;
 }
@@ -138,6 +138,7 @@
   justify-content: end;
   align-items: center;
   gap: 8px;
+  margin-block-start: -2px;
 }
 
 .card__icon-button {
@@ -175,3 +176,15 @@
 }
 
 /* #endregion */
+
+@media (width <= 375px) {
+
+  .card__save-button {
+    flex-direction: column;
+  }
+
+  .floppy-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
