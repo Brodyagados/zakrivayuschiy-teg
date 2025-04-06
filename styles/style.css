@@ -62,7 +62,7 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 8px;
   align-items: start;
 }
 
@@ -170,6 +170,7 @@
 .card__icon-button {
   inline-size: 41px;
   block-size: 38px;
+  margin-inline-end: 4px;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
