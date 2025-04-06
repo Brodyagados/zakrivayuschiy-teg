@@ -30,19 +30,21 @@
 /* #region Шапка */
 
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   inline-size: var(--content-inline-size);
   margin: 100px auto;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   text-transform: uppercase;
   text-align: center;
-  padding: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem)
-    clamp(0.875rem, 9.953vw - 1.458rem, 7.5rem) 25px;
+  padding-block: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem) 25px;
 }
 
 .header__title {
-  font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 1;
 }
 
@@ -131,7 +133,7 @@
 
 .card__header-title {
   font-size: inherit;
-  font-weight: var(--title-main-font-weight);
+  font-variation-settings: 'wght' var(--title-main-font-weight);
   letter-spacing: 0;
 }
 
@@ -168,9 +170,13 @@
 /* #region Кнопка "Сердце" */
 
 .card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 41px;
   block-size: 38px;
   margin-inline-end: 4px;
+  padding: 0;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -252,7 +258,7 @@
 .styled-button {
   position: relative;
   font-size: 14px;
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   overflow: hidden;
