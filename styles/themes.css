@@ -25,7 +25,7 @@
 
 @media (prefers-color-scheme: light) {
 
-  .page {
+  :root {
     --card-txt-font-weight: 400;
     --card-title-font-weight: 700;
     --background-color: #fff;
