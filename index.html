@@ -46,9 +46,11 @@
       </nav>
     </header>
     <main class="main">
-      <article>
-        <header>
-          <h3>Фритрек и нулевой спринт: Подготовка к работе</h3>
+      <article class="card">
+        <header class="card__header">
+          <h3 class="card__header-title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h3>
         </header>
         <picture>
           <source
@@ -56,22 +58,25 @@
             srcset="./images/png/bus-mobile.png"
           />
           <img
+            class="card__image"
             src="./images/png/bus-desktop.png"
             alt="Пиксельное изображение фургона."
           />
         </picture>
-        <div>
+        <div class="card__content">
           <p>
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
             знания могут повлиять на ваше будущее.
           </p>
           <p>Место для ваших воспоминаний о начале обучения.</p>
+          <div class="card__buttons">
+            <button type="button" class="card__icon-button" />
+            <button type="button" class="card__like-button styled-button">
+              <span>Like</span>
+            </button>
+          </div>
         </div>
-        <footer>
-          <button />
-          <button>Like</button>
-        </footer>
       </article>
     </main>
     <footer>

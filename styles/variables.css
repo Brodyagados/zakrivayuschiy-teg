@@ -9,5 +9,6 @@
   --accent-color: #00cc14;
   --background-image: url(../svg/pattern-dark.svg);
 
+  --border: 2px solid currentColor;
   --content-inline-size: clamp(375px, 66vw, 700px);
 }
