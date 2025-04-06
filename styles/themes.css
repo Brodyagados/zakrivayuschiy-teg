@@ -11,6 +11,7 @@
   --background-color: #000;
   --accent-color: #00cc14;
   --background-image: url(../svg/pattern-dark.svg);
+  --heart-contour-color: #00cc14;
 }
 
 .theme-light {
@@ -19,6 +20,7 @@
   --background-color: #fff;
   --accent-color: #000;
   --background-image: url(../svg/pattern-light.svg);
+  --heart-contour-color: #000;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,5 +31,6 @@
     --background-color: #fff;
     --accent-color: #000;
     --background-image: url(../svg/pattern-light.svg);
+    --heart-contour-color: #000;
   }
 }

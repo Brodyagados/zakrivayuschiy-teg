@@ -9,4 +9,6 @@
   --accent-color: #00cc14;
   --background-image: url(../svg/pattern-dark.svg);
   --content-inline-size: clamp(375px, 66vw, 700px);
+  --heart-color: #f00;
+  --heart-contour-color: #00cc14;
 }
