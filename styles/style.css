@@ -23,7 +23,6 @@
   background-attachment: fixed;
   background-repeat: repeat;
   background-size: cover;
-  background-color: var(--background-color);
   color: var(--accent-color);
 }
 
@@ -117,6 +116,9 @@
 /* #endregion */
 
 .main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   inline-size: var(--content-inline-size);
   margin-inline: auto;
 }
@@ -137,9 +139,43 @@
   letter-spacing: 0;
 }
 
+.card-image-container {
+  position: relative;
+  border-inline: 2px solid var(--accent-color);
+}
+
+.card__label {
+  --indent: 25px;
+
+  position: absolute;
+  top: var(--indent);
+  right: var(--indent);
+  font-family: var(--accent-font-family), fantasy;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  text-shadow:
+    -1px 0 var(--label-stroke-color),
+    0 1px var(--label-stroke-color),
+    1px 0 var(--label-stroke-color),
+    0 -1px var(--label-stroke-color);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+}
+
+@supports (
+  (text-stroke: 0.5px var(--label-stroke-color)) or
+    (-webkit-text-stroke: 0.5px var(--label-stroke-color))
+) {
+  .card__label {
+    -webkit-text-stroke: 0.5px var(--label-stroke-color);
+    text-stroke: 0.5px var(--label-stroke-color);
+    text-shadow: none;
+  }
+}
+
 .card__image {
   inline-size: 100%;
-  border-inline: 2px solid var(--accent-color);
   object-fit: cover;
   object-position: center;
 }

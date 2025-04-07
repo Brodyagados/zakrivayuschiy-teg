@@ -20,4 +20,5 @@
   --content-inline-size: clamp(375px, 66vw, 700px);
   --heart-color: #f00;
   --heart-contour-color: #00cc14;
+  --label-stroke-color: #000;
 }
