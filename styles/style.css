@@ -336,15 +336,11 @@
   position: relative;
 }
 
-/* #endregion */
-
-/* #region Подвал */
-
 .card__save-button {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 50px auto 100px;
+  margin: 0 auto 100px;
   padding: 15px 19px;
 }
 
