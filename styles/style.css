@@ -350,6 +350,48 @@
 
 /* #endregion */
 
+/* #region Диалог */
+
+dialog {
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  gap: 30px 20px;
+  inline-size: 353px;
+  padding: 30px;
+  font-size: 14px;
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+dialog[open] {
+  display: grid;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+dialog .floppy-icon {
+  --size: 39px;
+}
+
+.dialog__text {
+  font-family: var(--accent-font-family), fantasy;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.dialog__close-button {
+  inline-size: 100%;
+  padding: 10px 0;
+  grid-column: span 2;
+  text-transform: uppercase;
+}
+
+/* #endregion */
+
 @media (width <= 375px) {
   .card__save-button {
     flex-direction: column;
