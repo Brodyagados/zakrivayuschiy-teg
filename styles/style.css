@@ -22,7 +22,7 @@
   background-image: var(--background-image);
   background-attachment: fixed;
   background-repeat: repeat;
-  background-size: 4px;
+  background-size: cover;
   background-color: var(--background-color);
   color: var(--accent-color);
 }
@@ -322,7 +322,6 @@
 /* #endregion */
 
 @media (width <= 375px) {
-
   .card__save-button {
     flex-direction: column;
   }
