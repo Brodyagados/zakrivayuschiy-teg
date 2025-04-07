@@ -161,6 +161,7 @@
     0 -1px var(--label-stroke-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
+  z-index: 1;
 }
 
 @supports (
@@ -282,6 +283,38 @@
   animation-duration: 0.3s;
   animation-timing-function: ease-in;
   animation-direction: alternate;
+}
+
+.card__image_filter_saturate {
+  filter: saturate(150%);
+}
+
+.card__image_filter_brightness {
+  filter: brightness(90%);
+}
+
+.card__image_filter_grayscale {
+  filter: grayscale(50%);
+}
+
+.card__image_filter_invert {
+  filter: invert(0.1) hue-rotate(90deg);
+}
+
+.card__image_filter_sepia {
+  filter: sepia(60%);
+}
+
+.card__image_filter_contrast {
+  filter: contrast(90%) blur(1px);
+}
+
+.card__image_filter_opacity {
+  filter: opacity(85%);
+}
+
+.card__image_filter_hue-rotate {
+  filter: hue-rotate(180deg);
 }
 
 /* #endregion */
