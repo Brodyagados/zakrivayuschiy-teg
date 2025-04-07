@@ -22,6 +22,7 @@
     linear-gradient(#007f0c, #004306);
   --heart-contour-color: #00cc14;
   --label-stroke-color: #000;
+  --button-text-color: #00cc14;
 }
 
 .theme-light {
@@ -46,6 +47,7 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --heart-contour-color: #000;
   --label-stroke-color: #fff;
+  --button-text-color: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -71,5 +73,6 @@
       linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     --heart-contour-color: #000;
     --label-stroke-color: #fff;
+    --button-text-color: #fff;
   }
 }
