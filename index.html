@@ -552,24 +552,32 @@
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
       >
-        <svg class="floppy-icon" viewBox="0 0 21 21" aria-hidden="true">
+        <svg
+          class="floppy-icon"
+          viewBox="0 0 21 21"
+          aria-hidden="true"
+          fill="currentColor"
+        >
           <use href="./svg/floppy.svg#floppy" />
         </svg>
         <span class="button__text">Сохранить&nbsp;на&nbsp;память</span>
       </button>
     </main>
     <dialog id="dialog-id">
-      <svg class="floppy-icon" viewBox="0 0 21 21" fill="currentColor">
-        <use href="./svg/floppy.svg#floppy" />
-      </svg>
-      <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-      <button
-        class="dialog__close-button styled-button"
-        type="button"
-        onclick="window['dialog-id'].close();"
-      >
-        <span class="button__text">ок</span>
-      </button>
+      <form method="dialog">
+        <svg
+          class="floppy-icon"
+          viewBox="0 0 21 21"
+          aria-hidden="true"
+          fill="currentColor"
+        >
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        <button class="dialog__close-button styled-button" type="submit">
+          <span class="button__text">Ок</span>
+        </button>
+      </form>
     </dialog>
     <script src="./scripts/set-theme.js"></script>
     <script src="./scripts/like.js"></script>
